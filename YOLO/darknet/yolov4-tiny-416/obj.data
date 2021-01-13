@@ -1,6 +1,6 @@
 classes= 1
-train  = ../YOLO/train.txt
-valid  = ../YOLO/val.txt
-names = ../YOLO/darknet/yolov4-csp-512/obj.names
-backup = ../YOLO/darknet/yolov4-csp-512/weights/
+train  = ../Object_Detection/YOLO/train.txt
+valid  = ../Object_Detection/YOLO/val.txt
+names = ../Object_Detection/YOLO/darknet/yolov4-tiny-416/obj.names
+backup = ../Object_Detection/YOLO/darknet/yolov4-tiny-416/weights/
 
