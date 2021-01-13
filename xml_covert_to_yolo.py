@@ -64,8 +64,8 @@ def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train
         f.write('\n'.join(datasets[len_datasets:]))
 
 all_classes = {'phone': 0}
-train_img = "datasets/MobilePhonesPascalVOC/images"
-train_annotation = "datasets/MobilePhonesPascalVOC/annotations"
+train_img = "../datasets/MobilePhonesPascalVOC/images"
+train_annotation = "../datasets/MobilePhonesPascalVOC/annotations"
 yolo_path = "YOLO/data/"
 write_train_txt = 'YOLO/train.txt'
 write_val_txt = 'YOLO/val.txt'
