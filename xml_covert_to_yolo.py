@@ -66,9 +66,9 @@ def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train
 all_classes = {'phone': 0}
 train_img = "datasets/MobilePhonesPascalVOC/images"
 train_annotation = "datasets/MobilePhonesPascalVOC/annotations"
-yolo_path = "datasets/YOLO/data/"
-write_train_txt = 'datasets/YOLO/train.txt'
-write_val_txt = 'datasets/YOLO/val.txt'
+yolo_path = "YOLO/data/"
+write_train_txt = 'YOLO/train.txt'
+write_val_txt = 'YOLO/val.txt'
 
 if not os.path.exists(yolo_path):
     os.mkdir(yolo_path)
