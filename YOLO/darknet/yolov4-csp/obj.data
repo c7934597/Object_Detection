@@ -1,0 +1,6 @@
+classes= 1
+train  = ../Object_Detection/YOLO/train.txt
+valid  = ../Object_Detection/YOLO/val.txt
+names = ../Object_Detection/YOLO/darknet/yolov4-csp/obj.names
+backup = ../Object_Detection/YOLO/darknet/yolov4-csp/weights/
+
