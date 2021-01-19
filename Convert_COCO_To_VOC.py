@@ -5,7 +5,7 @@ import os
 # http://cocodataset.org/#format-data
 
 # target_class = ["car", "dog"] #[] --> all
-target_class = ["tv", "laptop", "cell phone"]
+target_class = ["person", "cell phone", "laptop", "tv"]
 coco_annotations_path = "../datasets/annotations_trainval2017/annotations/instances_train2017.json"
 coco_images_path = "../datasets/train2017/"
 xml_file = "xml_file.txt"
