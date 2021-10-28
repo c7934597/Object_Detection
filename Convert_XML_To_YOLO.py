@@ -63,7 +63,7 @@ def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train
     with open(write_val_txt, 'a') as f:
         f.write('\n'.join(datasets[len_datasets:]))
 
-all_classes = {'mouse': 0, 'keyboard': 1, 'person': 2}
+all_classes = {'mouse': 0, 'keyboard': 1, 'cell phone': 2}
 train_img = "../datasets/coco_2017/images"
 train_annotation = "../datasets/coco_2017/annotations"
 yolo_path = "YOLO/data/"
