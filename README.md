@@ -1,9 +1,10 @@
 # Object_Detection
 Object_Detection
 
-https://roboflow.com/
+## Document
 
-https://github.com/AlexeyAB/darknet
+### [Object Detection](https://docs.google.com/document/d/1_so6rtVGDzjAnRFf6cbyNooh6mibHQfyGkHyDUUvyaQ/edit?usp=sharing)
 
-https://medium.com/ching-i/scaledyolov4-yolov4-csp-%E8%A8%93%E7%B7%B4%E6%95%99%E5%AD%B8-ee091598e503
+### [YOLOv4](https://docs.google.com/document/d/1aZ3_0OmDHWkTB4QjrbAWp1-sUYO1uGJuzyYiRlxDcyU/edit?usp=sharing)
 
+### [YOLOv5](https://docs.google.com/document/d/18As6-1P4mNCRGXJGWZH1SmRSLXFN_h5nW_CJojtjA5I/edit?usp=sharing)
