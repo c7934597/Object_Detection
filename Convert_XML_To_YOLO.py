@@ -3,8 +3,7 @@ import shutil
 from bs4 import BeautifulSoup
 import math
 
-def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train_txt, write_val_txt):
-    now_path = os.getcwd()
+def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train_txt, write_val_txt, now_path):
     data_counter = 0
 
     for data_file in os.listdir(train_annotation):
@@ -49,7 +48,11 @@ def run_convert(all_classes, train_img, train_annotation, yolo_path, write_train
     print('the file is processed')
 
     # create train and val txt
-    path = os.path.join(now_path, yolo_path)
+    if now_path == "":
+        now_path = os.getcwd()
+        path = os.path.join(now_path, yolo_path)
+    else:
+        path = now_path
     datasets = []
     for idx in os.listdir(yolo_path):
         if not idx.endswith('.txt'):
@@ -69,6 +72,7 @@ train_annotation = "datasets/coco-text/formatted_dataset/Annotations"
 yolo_path = "YOLO/data/"
 write_train_txt = 'YOLO/train.txt'
 write_val_txt = 'YOLO/val.txt'
+now_path = "../input/cocotext-v20/data/"
 
 if not os.path.exists(yolo_path):
     os.mkdir(yolo_path)
@@ -88,4 +92,4 @@ if os.path.exists(write_train_txt):
 if os.path.exists(write_val_txt):
     file=open(write_val_txt, 'w')
 
-run_convert(all_classes, train_img, train_annotation, yolo_path, write_train_txt, write_val_txt)
+run_convert(all_classes, train_img, train_annotation, yolo_path, write_train_txt, write_val_txt, now_path)
