@@ -72,7 +72,7 @@ train_annotation = "datasets/coco-text/formatted_dataset/Annotations"
 yolo_path = "YOLO/data/"
 write_train_txt = 'YOLO/train.txt'
 write_val_txt = 'YOLO/val.txt'
-now_path = "../input/cocotext-v20/data/"
+now_path = '/kaggle/working/data/'
 
 if not os.path.exists(yolo_path):
     os.mkdir(yolo_path)
