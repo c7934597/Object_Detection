@@ -1,0 +1,22 @@
+[streammux]
+# Set muxer output width and height
+muxer_width = 1920
+muxer_height = 1080
+
+# Boolean property to inform muxer that sources are live
+muxer_live_source = 1
+
+# Muxer batch size
+muxer_batch_size = 1
+
+# time out in usec, to wait after the first buffer is available 
+# to push the batch even if the complete batch is not formed
+# (1/max_fps)
+# 12fps source: 1 / 12 * 1000 * 1000 = 83333 (microseconds)
+# 25fps source: 1 / 25 * 1000 * 1000 = 40000 (microseconds)
+# 30fps source: 1 / 30 * 1000 * 1000 = 33333 (microseconds)
+muxer_batched_push_timeout = 33333
+
+# Type of CUDA memory
+muxer_nvbuf_memory_type = 0
+
