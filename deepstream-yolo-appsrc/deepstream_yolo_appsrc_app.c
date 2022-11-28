@@ -31,7 +31,7 @@
 
 #define CONFIG_PATH "deepstream_yolo_appsrc_app_config.txt"
 
-#define PGIE_CONFIG_FILE "yolo_pgie_config.txt"
+#define PGIE_CONFIG_FILE "pgie_config.txt"
 #define MAX_DISPLAY_LEN 64
 
 #define PGIE_CLASS_ID_VEHICLE 0
