@@ -1,0 +1,5 @@
+Car
+Front Door
+Truck
+Bus
+Bicycle
