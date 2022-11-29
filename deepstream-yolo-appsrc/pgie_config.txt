@@ -114,7 +114,7 @@ num-detected-classes=5
 
 # Name of the custom bounding box parsing function. If not specified.
 parse-bbox-func-name=NvDsInferParseYolo
-engine-create-func=NvDsInferYoloCudaEngineGet
+engine-create-func-name=NvDsInferYoloCudaEngineGet
 
 # Absolute pathname of a library containing custom method implementations for custom models.
 custom-lib-path=./nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
