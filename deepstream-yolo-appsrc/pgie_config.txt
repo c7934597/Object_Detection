@@ -90,15 +90,15 @@ batch-size=1
 # model file
 #tlt-model-key=tlt_encode
 #tlt-encoded-model=
-custom-network-config=./yolov5/yolov5s.cfg
-model-file=./yolov5/yolov5s.wts
+custom-network-config=./models/yolov5/yolov5s.cfg
+model-file=./models/yolov5/yolov5s.wts
 
 # build engine
 #int8-calib-file=
-model-engine-file=./yolov5/model_b1_gpu0_fp16.engine
+model-engine-file=./models/yolov5/model_b1_gpu0_fp16.engine
 
 # label file
-labelfile-path=./yolov5/labels.txt
+labelfile-path=./models/yolov5/labels.txt
 
 # Number of classes detected by the network (Detector)
 num-detected-classes=5
