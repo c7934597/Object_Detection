@@ -25,7 +25,7 @@ ifeq ($(CUDA_VER),)
   $(error "CUDA_VER is not set")
 endif
 
-APP:= deepstream-yolo-appsrc
+APP:= deepstream-alpr-appsrc
 
 TARGET_DEVICE = $(shell gcc -dumpmachine | cut -f1 -d -)
 
@@ -52,9 +52,8 @@ CFLAGS+= $(shell pkg-config --cflags $(PKGS))
 LIBS:= $(shell pkg-config --libs $(PKGS))
 
 LIBS+= -L$(LIB_INSTALL_DIR) -lnvdsgst_meta -lnvds_meta -lgstapp-1.0 \
-	-lnvbufsurface -lnvbufsurftransform -lnvdsgst_helper -lnvds_batch_jpegenc \
 	   -L/usr/local/cuda-$(CUDA_VER)/lib64/ -lcudart \
-	   -lm -lcurl -lcuda -Wl,-rpath,$(LIB_INSTALL_DIR)
+       -lcuda -Wl,-rpath,$(LIB_INSTALL_DIR)
 
 all: $(APP)
 
